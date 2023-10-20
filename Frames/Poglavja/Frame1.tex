@@ -1,0 +1,18 @@
+\begin{frame}{Izračun števila $\pi$}
+
+Izračun števila $\pi$ v programskem okolju MATLAB:
+
+    \begin{itemize}[<+->]
+        \item S pomočjo ukaza "rand " pridobimo poljubne točke med 0 in 1
+        \item Točke nato skaliramo na območje med -1 in 1 z ukazom $(rand(2,tocke)-0.5)*2$
+        \item Preverimo ali točke ležijo v enotskem krogu
+        \begin{itemize}[<.->]
+            \item Uporaba zanke "for"
+            \item Enačba kroga: $x^2+y^2=1$
+        \end{itemize}
+        %\vspace{2mm}
+        \item Sledi vstavljanje točk, ki so v krogu v nov vektor
+        \item Izračunamo razmerje točk v krogu in kvadratu, ter jih množimo s 4
+         
+    \end{itemize}
+\end{frame}
