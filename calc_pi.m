@@ -29,5 +29,7 @@ hold off
 function[stevilo_pi, napaka_pi] = area_pi(tockekrog,tockekvadrat)
 
     stevilo_pi = (length(tockekrog)/length(tockekvadrat))*4;
-    napaka_pi = pi - stevilo_pi;
+
+    napaka_pi = abs(pi - stevilo_pi);
+
 end
