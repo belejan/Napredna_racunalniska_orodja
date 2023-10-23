@@ -17,10 +17,19 @@ plot(kvadrat(1,:), kvadrat(2,:),"blue."); % Tocke samo v kvadratu
 hold on
 plot(krog(1,:), krog(2,:),"black*"); % Tocke v krogu
 
+% 1.4.1 Legenda grafa
+legend('Krožnica','Točke izven kroga','Točke v krogu')
+title('Metoda Monte Carlo za iskanje približka števila pi')
+xlabel('x')
+ylabel('y')
+hold off
+
 % Funkcija, ki primerja stevilo tock znotraj in zunaj krog (+napaka PI)
 
 function[stevilo_pi, napaka_pi] = area_pi(tockekrog,tockekvadrat)
 
     stevilo_pi = (length(tockekrog)/length(tockekvadrat))*4;
+
     napaka_pi = abs(pi - stevilo_pi);
+
 end
